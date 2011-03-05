@@ -1,0 +1,11 @@
+Options -indexes
+#Uudelleenohjaus
+Redirect 301 /lukujarjestys.html http://h.01.fi/lukujarjestykset/it09.htm
+Redirect 301 /lukujärjestys.html http://h.01.fi/lukujarjestykset/it09.htm
+Redirect 301 /lukujärjestykset http://h.01.fi/lukujarjestykset
+#Jos ollaan Hamkissa naytetaan erikoisversio
+RewriteEngine On
+RewriteCond %{REMOTE_HOST} ^.*\.hamk\.fi$ [OR]
+#195.148.236.0 - 195.148.239.255
+RewriteCond %{REMOTE_ADDR} ^195\.148\.(23[6-9])\.\d+$
+RewriteRule index.php index.hamk.php
