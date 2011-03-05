@@ -1,0 +1,4 @@
+Options +indexes
+HeaderName /lukujarjestykset/header.html
+IndexOptions Charset=UTF-8 FancyIndexing SuppressHTMLPreamble SuppressIcon SuppressRules SuppressDescription xhtml SuppressColumnSorting
+IndexIgnore header.html
