@@ -218,7 +218,12 @@ haeSyotteet();
 		<p>Lukujärjestykset on päivitetty <time datetime="2011-01-27">27.01.2011</time>.</p>
 	</section>
 	<footer>
-		<small><a href="mailto:PGPAM7NhCFxHifwN@ity.ns0.it" title="Palautetta saa lähettää sähköpostitse">palaute&gt;/dev/null</a></small>
+		<nav>
+			<ul>
+				<li><a href="http://01.fi/" title="01.fi">01.fi</a></li>
+				<li><a href="mailto:whooqseezoo@dunflimblag.mailexpire.com" title="Palautetta voi lähettää sähköpostitse">Palaute&gt;/dev/null</a></li>
+			</ul>
+		</nav>
 	</footer>
 </body>
 </html>

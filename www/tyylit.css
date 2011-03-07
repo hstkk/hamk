@@ -2,8 +2,13 @@
 a{color:#00e;text-decoration:none;}
 a:active{position:relative;top:1px;}
 a:active,a:focus,a:hover{text-decoration:underline;}
-body{color:#222;font:0.875em/1.5em Arial, "Helvetica Neue", Helvetica, sans-serif;min-width:640px;text-shadow:0 1px 0 #fff;}
+body{color:#222;font:0.875em/1.5em Arial, "Helvetica Neue", Helvetica, sans-serif;min-width:800px;text-shadow:0 1px 0 #fff;}
 body#hamk #linkit ul{width:25%;}
+footer{padding:5px 5%;}
+footer li{background:#eee;display:inline;padding:0 5px 0 0;}
+footer nav{background:#222;line-height:.8;}
+footer nav a{color:#222;}
+footer nav ul li:last-child{float:right;padding:0 0 0 5px;}
 h1{font-size:3em;font-weight:400;}
 h1 a:hover,h1 a:active,h1 a:focus{text-decoration:none;}
 h2{color:#111;font-size:2em;font-weight:400;padding-bottom:0.75em;}
@@ -11,19 +16,19 @@ header{background:#222;color:#fff;height:3em;line-height:3em;text-shadow:0 -1px 
 header a{color:#fff;}
 header li{display:inline;padding:0 0.15em;}
 header nav{-moz-border-radius-bottomleft:5px;-moz-border-radius-bottomright:5px;background:#222;background-color:rgba(34,34,34,0.75);border-bottom-left-radius:5px;border-bottom-right-radius:5px;padding:0 0.15em;position:fixed;right:5%;top:0;z-index:100;}
-header,section,footer{display:block;padding:0 5%;}
-nav li:first-child,#linkit li:first-child,#lukujarjestykset li:first-child{font-weight:700;}
-nav li:first-child:after{content:":";}
+header nav li:first-child,#linkit li:first-child,#lukujarjestykset li:first-child{font-weight:700;}
+header nav li:first-child:after{content:":";}
+header,section{display:block;padding:0 5%;}
 pre{font-family:Arial, "Helvetica Neue", Helvetica, sans-serif;white-space:pre;}
 section li a,.cal{-moz-transition:background-color 0.5s linear;-o-transition:background-color 0.5s linear;-webkit-transition:background-color 0.5s linear;background-color:#fff;}
 section li a:focus,section li a:hover,.cal:focus,.cal:hover{-moz-transition:background-color 0.1s linear;-o-transition:background-color 0.1s linear;-webkit-transition:background-color 0.1s linear;background-color:#eee;}
-small,a time{font-size:.8em;}
+small,a time,footer{font-size:.8em;}
 td{vertical-align:top;}
 th,td{-moz-border-radius:5px;-webkit-border-radius:5px;background:#fff;border:1px solid #888;border-radius:5px;padding:5px;text-align:center;}
 th:empty,td:empty{background:none;}
 th:hover,td:hover{border-color:#222;}
 ul{list-style:none;}
-#linkit a,#syotteet a,#lukujarjestykset a{display:block;}
+#linkit a,#syotteet a,#lukujarjestykset a,footer,footer nav{display:block;}
 #linkit a[title]:hover:after,#linkit a[title]:focus:after{background-color:#eee;color:#222;content:", " attr(title);padding-right:5px;position:absolute;text-decoration:none;z-index:99;}
 #linkit li,#lukujarjestykset li{padding:0 5px;}
 #linkit li:first-child,#lukujarjestykset li:first-child{-moz-border-radius:5px;-webkit-border-radius:5px;background-color:#eee;border-radius:5px;margin-bottom:5px;}
@@ -32,8 +37,8 @@ ul{list-style:none;}
 #lukujarjestykset li a{background-color:#eee;}
 #lukujarjestykset li:first-child,#lukujarjestykset li a:hover{background-color:#fff;}
 #lukujarjestykset ul{margin-right:5px;margin-top:5px;}
-#ruokalista,#lukujarjestykset,footer{background:#eee;}
 #ruokalista,#lukujarjestykset p{clear:both;}
+#ruokalista,#lukujarjestykset,footer{background:#eee;}
 #syotteet a time:after{content:")";}
 #syotteet a time:before{content:"(";}
 #syotteet a,.cal{background:#fff url(img.png) no-repeat top left;padding-left:24px;}
@@ -49,7 +54,7 @@ ul{list-style:none;}
 .oikea li{margin-left:4px;}
 .vasen li{margin-right:4px;}
 /* Mobiili */
-@media all and (max-device-width:640px), all and (max-width:640px){
+@media all and (max-device-width:800px), all and (max-width:800px){
 body{min-width:0;}
 footer{display:none;}
 h1,section{padding:0 10px;}
