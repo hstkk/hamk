@@ -1,4 +1,4 @@
-<?php
+Ôªø<?php
 
 ini_set('display_errors','Off');
 ini_set('log_errors','On');
@@ -51,7 +51,7 @@ class Menu extends Base{
 	
 	private function parse(){
 		$html=$this->getContent();
-		if($html && !empty($html) && !strpos($html,'‰ivitet‰‰n') && strpos($html,'vk '.date('W')*1)){
+		if($html && !empty($html) && !strpos($html,'√§ivitet√§√§n') && strpos($html,'vk '.date('W')*1)){
 			$html=str_replace(array('<br></p><p>','<br>','<br/>','</p><p>','</h1>'),"\n",$html);
 			$html=str_replace("\n\n\n","\n\n",$html);
 			$dom=new DOMDocument();
