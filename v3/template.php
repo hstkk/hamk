@@ -204,7 +204,7 @@
 		</ul>
 	</section>
 	<footer>
-		<p>Päivitetty <time datetime="<?php echo date('Y-m-d');?>"><?php echo date('H:i d.m.Y');?></time></p>
+		<p><time class="updated" datetime="<?php echo date('c');?>"><?php echo time();?></time></p>
 	</footer>
 </body>
 </html>
