@@ -29,7 +29,7 @@
 				<li><a href="#linkit" title="Linkkeihin">Linkit</a></li>
 <?php if($this->menu!=NULL) echo "\t\t\t\t",'<li><a href="#ruokalista" title="Ruokalistaan">Ruokalista</a></li>',"\n"; if($this->feeds!=NULL) echo "\t\t\t\t",'<li><a href="#ajankohtaista" title="Ajankohtaisiin">Ajankohtaista</a></li>',"\n"; ?>
 				<li><a href="#lukujarjestykset" title="Lukujärjestyksiin">Lukujärjestykset</a></li>
-				<li><a href="/tmp" title="h.01.fi/tmp">/tmp</a></li>
+				<li><a href="/tmp" title="hamk.01.fi/tmp">/tmp</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -59,7 +59,7 @@
 		<ul>
 			<li>etc</li>
 			<li><a href="http://hyria.fi/opiskelu_hyriassa/lounaskahvilat/ruokakellon_ruokalista/" title="Hyria, Ruokakello">Ruokalista</a></li>
-			<li><a href=https://docs.google.com/a/hostikka.com/viewer?url=http://portal.hamk.fi/portal/page/portal/7E8874A814B96DEEE040A8C0CA414522">Lukuvuosikalenteri</a></li>
+			<li><a href="https://docs.google.com/viewer?url=http://portal.hamk.fi/portal/page/portal/7E8874A814B96DEEE040A8C0CA414522">Lukuvuosikalenteri</a></li>
 			<li><a href="http://hamko.fi/" title="HAMK opiskelijakunta">HAMKO</a></li>
 			<li><a href="https://wiki.hamk.fi/">Wiki</a></li>
 			<li><a href="http://foreca.com/Finland/Riihimaki?details" title="Riihimäki">Sää</a></li>
