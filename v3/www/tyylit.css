@@ -1,0 +1,319 @@
+* {
+-moz-transition:all 0.25s ease-in-out;
+-o-transition:all 0.25s ease-in-out;
+-webkit-transition:all 0.25s ease-in-out;
+margin:0;
+padding:0;
+}
+
+a {
+color:#00e;
+text-decoration:none;
+}
+
+a:active,a:focus,a:hover,header h1 a {
+text-decoration:underline;
+}
+
+body {
+background:#fff;
+color:#333;
+font:0.875em/1.5em Arial, "Helvetica Neue", Helvetica, sans-serif;
+margin:0 auto;
+max-width:940px;
+text-shadow:0 0.1em 0 #eee;
+}
+
+footer {
+background:#333;
+height:0.8em;
+line-height:0.8em;
+margin:0.5em 0;
+text-align:right;
+}
+
+footer p {
+background:#fff;
+color:#333;
+display:inline;
+padding:0 0 0 0.5em;
+}
+
+h2 {
+border-bottom:1px solid #d1d1d1;
+font-size:2em;
+font-weight:400;
+margin:1px 0 0.75em;
+}
+
+header {
+background-color:rgba(238,238,238,0.95);
+height:2em;
+left:0;
+line-height:2em;
+position:fixed;
+right:0;
+text-align:center;
+top:0;
+z-index:100;
+}
+
+header a {
+color:#333;
+margin:0 0.5em;
+}
+
+header h1 {
+font-size:1em;
+font-weight:400;
+}
+
+header h1 span {
+font-weight:700;
+text-transform:uppercase;
+}
+
+header h1,header nav,header ul,header li {
+display:inline;
+}
+
+header,td,#linkit li:first-child,#lukujarjestykset li:first-child {
+background-color:#eee;
+border-bottom:1px solid #d1d1d1;
+text-shadow:0 0.1em 0 #fff;
+}
+
+pre {
+font-family:Arial, "Helvetica Neue", Helvetica, sans-serif;
+white-space:pre;
+}
+
+section {
+padding:2em 0 0;
+}
+
+section a,.cal {
+border-bottom:1px dotted #d1d1d1;
+}
+
+section a:hover,.cal:hover {
+border-bottom:1px solid #d1d1d1;
+padding:0 0.5em;
+}
+
+section,section a,footer,footer nav,header {
+display:block;
+}
+
+section:target h2 {
+border-bottom:3px double #d1d1d1;
+}
+
+small,a time,footer {
+font-size:.8em;
+}
+
+td {
+vertical-align:top;
+}
+
+td:hover {
+background:#d1d1d1;
+border-color:#eee;
+}
+
+th,td {
+-moz-transition:background-color 0.5s linear;
+-o-transition:background-color 0.5s linear;
+-webkit-transition:background-color 0.5s linear;
+border:1px solid #d1d1d1;
+padding:0.5em;
+text-align:center;
+}
+
+th,td,#linkit li:first-child,#lukujarjestykset li:first-child {
+-moz-border-radius:0.5em;
+-webkit-border-radius:0.5em;
+border-radius:0.5em;
+}
+
+th,th:empty,td:empty,th:empty:hover,td:empty:hover {
+background:#fff;
+}
+
+ul {
+list-style:none;
+}
+
+#ajankohtaista a time:after {
+content:")";
+}
+
+#ajankohtaista a time:before {
+content:"(";
+}
+
+#ajankohtaista a:before,.cal:before {
+background:url(img.png) no-repeat top left;
+content:"";
+float:left;
+height:16px;
+margin:0 5px 0 0;
+width:16px;
+}
+
+#ajankohtaista a[href ^="http://portal.hamk.fi"]:before {
+background-position:-64px -32px;
+}
+
+#ajankohtaista a[href ^="http://twitter.com/"]:before {
+background-position:-48px -48px;
+}
+
+#ajankohtaista a[href ^="http://twitter.com/kr15h4"]:before {
+background-position:-16px -80px;
+}
+
+#ajankohtaista a[href ^="http://www.facebook.com/"]:before {
+background-position:-96px 0;
+}
+
+#ajankohtaista a[href ^="http://www.flickr.com/"]:before {
+background-position:-80px -16px;
+}
+
+#ajankohtaista a[href ^="http://www.youtube.com"]:before {
+background-position:-32px -64px;
+}
+
+#linkit li,#lukujarjestykset li {
+padding:0 0.5em;
+}
+
+#linkit ul {
+width:24%;
+}
+
+#linkit ul,#lukujarjestykset ul {
+float:left;
+margin:0 1.333% 0 0;
+}
+
+#linkit ul:last-of-type,#lukujarjestykset ul:last-of-type {
+margin-right:0;
+}
+
+#linkit,#lukujarjestykset {
+overflow:auto;
+}
+
+#lukujarjestykset ul {
+margin-top:0.5em;
+}
+
+.cal:before {
+background-position:0 -96px;
+}
+
+@media all and (max-device-width:800px), all and (max-width:800px){
+body {
+max-width:800px;
+}
+
+footer,#linkit ul:last-of-type {
+display:none;
+}
+
+h1 a {
+background-color:#eee;
+border-bottom:1px solid #d1d1d1;
+height:2em;
+line-height:2;
+}
+
+h1 a,nav,nav ul,nav ul li,nav ul li a {
+display:block;
+}
+
+header {
+background-color:#fff;
+border:0;
+height:100%;
+position:static;
+}
+
+header a {
+margin:0;
+}
+
+nav a:active,nav a:focus,nav a:hover {
+text-decoration:none;
+}
+
+nav ul {
+margin:1em auto;
+}
+
+nav ul li a {
+color:#00e;
+line-height:1.5em;
+text-align:left;
+text-shadow:0 0.1em 0 #eee;
+}
+
+section {
+margin:0 auto;
+padding:1em 0 0;
+}
+
+section,nav ul {
+width:95%;
+}
+
+ul {
+-moz-border-radius:0.25em;
+-webkit-border-radius:0.25em;
+border:1px solid #d1d1d1;
+border-radius:0.25em;
+}
+
+ul li a {
+background-color:#fff;
+}
+
+ul li a,.cal,section ul li a:hover,.cal:hover,#linkit li:first-child,#lukujarjestykset li:first-child {
+border-bottom:1px solid #d1d1d1;
+padding:0.5em;
+}
+
+ul li a:hover {
+background-color:#eee;
+text-shadow:0 0.1em 0 #fff;
+}
+
+ul li:last-child a,section ul li:last-child a:hover {
+border:0;
+}
+
+#linkit li,#lukujarjestykset li {
+padding:0;
+}
+
+#linkit li:first-child,#lukujarjestykset li:first-child {
+-moz-border-radius:0;
+-webkit-border-radius:0;
+border-radius:0;
+}
+
+#linkit ul {
+width:auto;
+}
+
+#linkit ul,#lukujarjestykset ul {
+float:none;
+}
+
+#linkit ul,#lukujarjestykset ul,#lukujarjestykset table {
+margin:0 0 1em;
+}
+}
