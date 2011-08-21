@@ -46,6 +46,12 @@ font-weight:400;
 margin:1px 0 0.75em;
 }
 
+header,td,#linkit li:first-child,#lukujarjestykset li:first-child {
+background-color:#eee;
+border-bottom:1px solid #d1d1d1;
+text-shadow:0 0.1em 0 #fff;
+}
+
 header {
 background-color:rgba(238,238,238,0.95);
 height:2em;
@@ -75,12 +81,6 @@ text-transform:uppercase;
 
 header h1,header nav,header ul,header li {
 display:inline;
-}
-
-header,td,#linkit li:first-child,#lukujarjestykset li:first-child {
-background-color:#eee;
-border-bottom:1px solid #d1d1d1;
-text-shadow:0 0.1em 0 #fff;
 }
 
 pre {
