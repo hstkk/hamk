@@ -42,7 +42,7 @@
 			<li><a href="https://soleops.hamk.fi/opsnet/" title="opetussuunnitelma">eHOPS</a></li>
 			<li><a href="https://wille.hamk.fi/" title="opiskelijasivut">WinhaWille</a></li>
 			<li><a href="http://hamk.fi/" title="Hämeen ammattikorkeakoulu">HAMK</a></li>
-			<li><a href="https://vanaicat.amkit.fi/cgi-bin/Pwebrecon.cgi?LANGUAGE=finnish&amp;DB=local&amp;PAGE=First">Kirjasto</a></li>
+			<li><a href="https://vanaicat.amkit.fi/">Kirjasto</a></li>
 			<li><a href="https://proxy.hamk.fi/login?url=http://mot.kielikone.fi/mot/hamkk/netmot.exe?motportal=80" title="kielikone">MOT</a></li>
 		</ul>
 		<ul>
@@ -59,7 +59,7 @@
 		<ul>
 			<li>etc</li>
 			<li><a href="http://hyria.fi/opiskelu_hyriassa/lounaskahvilat/ruokakellon_ruokalista/" title="Hyria, Ruokakello">Ruokalista</a></li>
-			<li><a href="https://docs.google.com/viewer?url=http://portal.hamk.fi/portal/page/portal/Yhteinen_Dokumenttikirjasto/opiskelijan_polku_hamk/opetusta_ohjaavat_saannot_ja_ohjeet/tiedostopankki/Opasvarasto/Yleisoppaan_kalenteri_10-11_st_1.pdf" title="voimassa oleva lukuvuosikalenteri">Kalenteri</a></li>
+			<li><a href=https://docs.google.com/a/hostikka.com/viewer?url=http://portal.hamk.fi/portal/page/portal/7E8874A814B96DEEE040A8C0CA414522">Lukuvuosikalenteri</a></li>
 			<li><a href="http://hamko.fi/" title="HAMK opiskelijakunta">HAMKO</a></li>
 			<li><a href="https://wiki.hamk.fi/">Wiki</a></li>
 			<li><a href="http://foreca.com/Finland/Riihimaki?details" title="Riihimäki">Sää</a></li>
@@ -90,7 +90,7 @@
 				<tr>
 					<th>08:00</th>
 					<td></td>
-					<td>Matematiikka 3A<br/>A208</td>
+					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>
