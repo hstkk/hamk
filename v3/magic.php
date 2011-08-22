@@ -15,7 +15,7 @@ class Base{
 	public function getHtml(){
 		return $this->html;
 	}
-	
+
 	protected function getContent(){
 		if(filter_var($this->url,FILTER_VALIDATE_URL)){
 			$ch=curl_init();
@@ -28,7 +28,7 @@ class Base{
 			if($result) return $result;
 		}
 	}
-	
+
 	protected function writeFile(){
 		if(is_writable($this->file) && !empty($this->html)) file_put_contents($this->file,$this->html);
 	}
@@ -36,7 +36,7 @@ class Base{
 
 class Menu extends Base{
 	public function __construct(){
-		$this->file='~/scripts/hamk.01.fi/menu.html';
+		$this->file='/home/sami/scripts/hamk.01.fi/menu.html';
 		$this->url='http://hyria.fi/opiskelu/lounaskahvilat/ruokakellon_ruokalista/?printer=1';
 		$this->fetch();
 		if(empty($this->html)) $this->parse();
@@ -48,12 +48,12 @@ class Menu extends Base{
 			if($content && !empty($content) && strpos($content,'vk '.date('W')*1)) $this->html=$content;
 		}
 	}
-	
+
 	private function parse(){
 		$html=$this->getContent();
 		if($html && !empty($html) && !strpos($html,'äivitetään') && strpos($html,'vk '.date('W')*1)){
-			$html=str_replace(array('<br></p><p>','<br>','<br/>','</p><p>','</h1>'),"\n",$html);
-			$html=str_replace("\n\n\n","\n\n",$html);
+			$html=str_replace(array('<br></p><p>','<br>','<br/>','</p><p>','</h1>','<BR>'),"\n",$html);
+			$html=str_replace(array("\n\n\n","\n\n\n\n"),"\n\n",$html);
 			$dom=new DOMDocument();
 			if(@$dom->loadHTML($html)){
 				$xpath=new DOMXPath($dom);
@@ -74,7 +74,7 @@ class Feeds extends Base{
 		$this->url='http://pipes.yahoo.com/pipes/pipe.run?_id=fe68c090fb31116cf15465324248b013&_render=json';
 		$this->parse();
 	}
-	
+
 	function parse(){
 		$json=$this->getContent();
 		if($json && !empty($json)){
@@ -118,14 +118,14 @@ class Page extends base{
 	public function __set($name,$value){
 		$this->$name=$value;
 	}
-	
+
 	private function parse(){
 		ob_start();
 		require 'template.php';
 		$html=ob_get_clean();
 		$this->html=$html;
 	}
-	
+
 	public function doMagic(){
 		$this->parse();
 		$this->writeFile();
